@@ -1,2 +1,27 @@
 /* 메인배너 ------------- */
+main #bnr {}
+main #bnr h2 {width: 1920px; height: 600px; margin:0 auto;}
+main #bnr h2 a {}
+main #bnr h2 a img {width: 100%;}
 /* main 2 추천메뉴 ------------- */
+/* main 3 샐러디메뉴 ------------- */
+/* main 4 샐러디 스토리 & 샐러디 친환경 캠페인 ------------- */
+main #subbnr1 {
+    width: 1920px;
+    display:flex;
+    margin: 0 auto;
+}
+main #subbnr1 .story_left {width: 960px; height:360px;}
+main #subbnr1 .story_left a {}
+main #subbnr1 .story_left a img {}
+main #subbnr1 .story_right {width: 960px; height:360px;}
+main #subbnr1 .story_right a {}
+main #subbnr1 .story_right a img {}
+/* mian 5 샐러디 뉴스 ------------- */
+main #news_right {}
+/* 띠배너 ------------- */
+/* main 6 브랜드 스토리 ------------- */
+/* main 3 추천메뉴 ------------- */
+/* 매장찾기 ------------- */
+/* 인스타그램 ------------- */
+/* 하단 서브배너 ------------- */
