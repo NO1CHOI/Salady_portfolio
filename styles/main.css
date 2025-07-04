@@ -1,3 +1,15 @@
+/* 
+color:#17633D,#EE7725,#333333
+14px = 0.875rem
+18px = 1.125rem
+20px = 1.25rem
+25px = 1.563rem
+40px = 2.5rem
+50px= 3.125rme
+
+*/
+
+
 /* 메인배너 ------------- */
 main #bnr {}
 main #bnr h2 {width: 1920px; height: 600px; margin:0 auto;}
@@ -18,10 +30,110 @@ main #subbnr1 .story_right {width: 960px; height:360px;}
 main #subbnr1 .story_right a {}
 main #subbnr1 .story_right a img {}
 /* mian 5 샐러디 뉴스 ------------- */
-main #news_right {}
+main #news {
+    width: 1920px; 
+    height: 854px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: wheat; */
+}
+main #news .news_left {}
+main #news .news_left h2 {font-size:2.5rem;font-weight: 600;margin-bottom:80px;}
+main #news .news_left a {font-size: 1.25rem; background-color:#17633D;padding:15px 30px;border-radius:10px;color:#fff;}
+main #news .news_right {}
+main #news .news_right .contents_wrap {}
+main #news .news_right .contents_wrap li {
+    width: 650px; height: 228px;
+    background-color:#fff;
+    border-bottom: 1px solid #17633D;
+    padding:50px 0 0 30px;
+}
+main #news .news_right .contents_wrap li a {}
+main #news .news_right .contents_wrap li a:hover p {color: #17633D;}
+main #news .news_right .contents_wrap li a span {font-size: 1.25rem; color: #17633D;}
+main #news .news_right .contents_wrap li a p {font-size: 1.563rem; font-weight: 600; margin:20px 0;}
+main #news .news_right .contents_wrap li a .date {font-size: 1.25rem; font-weight: 400;}
 /* 띠배너 ------------- */
+main #txt {
+    /* background-color: yellow; */
+}
+main #txt .txt_bg_ani {
+    width:100%; height:56px;
+    background:url(/images/band.png) repeat-x;
+    animation: txt_ani 20s linear infinite;
+}
+
+@keyframes txt_ani {
+    0% {background-position-x:0;}
+    100% {background-position-x:-1000px;}
+}
 /* main 6 브랜드 스토리 ------------- */
-/* main 3 추천메뉴 ------------- */
+main #brand {width: 1920px; margin:150px auto;}
+main #brand .brand_story_wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+main #brand .brand_story_wrap .brand_left {margin:100px 244px 0 0;}
+main #brand .brand_story_wrap .brand_left h3 {font-size: 3.125rem;}
+main #brand .brand_story_wrap .brand_left h3 em {font-weight: 600;}
+main #brand .brand_story_wrap .brand_left p {margin:50px 0;}
+main #brand .brand_story_wrap .brand_left a {
+    background-color: #17633D;
+    display: inline-block;
+    color: #fff;
+    padding:15px 30px;
+    border-radius: 5px;
+}
+main #brand .brand_story_wrap .brand_left a:hover {filter: brightness(1.2);}
+main #brand .brand_story_wrap .brand_right {
+    width: 660px; height: 500px;
+    background:url(/images/brand_story.png) no-repeat center / cover;
+}
+main #brand .franchise_wrap {
+    display: flex;
+    justify-content: center;
+}
+main #brand .franchise_wrap .franchise_left {
+    width: 660px; height: 500px;
+    background:url(/images/Franchise_story.png) no-repeat center / cover;
+}
+main #brand .franchise_wrap .franchise_right {
+    margin:100px 0 0 300px;
+    text-align: right;
+}
+main #brand .franchise_wrap .franchise_right h3 {font-size: 3.125rem;}
+main #brand .franchise_wrap .franchise_right h3 em {font-weight: 600;}
+main #brand .franchise_wrap .franchise_right p {margin:50px 0; line-height: 1.5;}
+main #brand .franchise_wrap .franchise_right a {
+    background-color: #EE7725;
+    display: inline-block;
+    color: #fff;
+    padding:15px 30px;
+    border-radius: 5px;
+}
+main #brand .franchise_wrap .franchise_right a:hover {filter: brightness(1.2);}
 /* 매장찾기 ------------- */
+main #map {}
+main #map .map_wrap {}
+main #map .map_wrap .map_title {}
+main #map .map_wrap p {}
+main #map .map_wrap a {}
 /* 인스타그램 ------------- */
+main #insta {}
+main #insta .insta_top {}
+main #insta .insta_top h2 {}
+main #insta .insta_top a {}
+main #insta .insta_top a img {}
+main #insta .insta_btm {}
+main #insta .insta_btm a {}
 /* 하단 서브배너 ------------- */
+main #subbnr2 {}
+main #subbnr2 .app_left {}
+main #subbnr2 .app_left a {}
+main #subbnr2 .app_left a img {}
+main #subbnr2 .ask_right {}
+main #subbnr2 .ask_right a {}
+main #subbnr2 .ask_right a img {}
