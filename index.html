@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 스크립트 -->
     <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
     <!-- header 시작 -->
@@ -74,12 +82,206 @@
     <main>
         <!-- 메인배너 -->
         <section id="bnr">
-            <h2><a href="#"><img src="./images/bnr_1.png" alt=""></a></h2>
+            <!-- 스와이퍼 사용 -->
+            <div class="swiper">
+                <!--필수-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                    <div class="swiper-slide slide4"></div>
+                </div>
+                <!--필요 시 사용(선택)-->
+                <div class="swiper-pagination"></div>
+        </div>
         </section>
         <!-- main 2 추천메뉴 -->
-        <section id="main_1"></section>
+        <section id="main_1">
+            <div class="main_title">
+                <h2>여름엔 가볍게,<br>샐러디답게!</h2>
+                <p>무더운 여름, 기름지고 무거운 음식은 부담스럽기만 하죠.<br>샐러디는 신선한 채소와 고단백 토핑으로 만든 균형 잡힌 한 끼로,<br>더위에 지친 당신의 하루를 건강하게 채워줍니다.</p>
+                <a href="#">메뉴 더보기</a>
+            </div>
+            <!--추천메뉴 Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide menu_swiper1 bigThum">Slide 1</div>
+                    <div class="swiper-slide menu_swiper2">Slide 2</div>
+                    <div class="swiper-slide menu_swiper3">Slide 3</div>
+                    <div class="swiper-slide menu_swiper4">Slide 4</div>
+                    <div class="swiper-slide menu_swiper5">Slide 5</div>
+                </div>
+                <div class="swiper-button-next menu_right_btn"></div>
+                <div class="swiper-button-prev menu_left_btn"></div>
+            </div>
+        </section>
         <!-- main 3 샐러디메뉴 -->
-        <section id="main_2"></section>
+        <section id="main_2">
+            <h2>SALADY’S MENU</h2>
+            <div class="menu_wrap">
+                <ul class="menu_container">
+                    <li><a href="#" class="active">샐러디</a>
+                        <div class="menu_bg show">
+                            <ul class="menu_item">
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_001.png" alt="로스트 닭다리살">
+                                        <span>
+                                            <span>로스트 닭다리살 샐러디</span>
+                                            <span>267 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_002.png" alt="콥 샐러디">
+                                        <span>
+                                            <span>콥 샐러디</span>
+                                            <span>216 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_003.png" alt="탄단지">
+                                        <span>
+                                            <span>탄단지 샐러디</span>
+                                            <span>322 kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_004.png" alt="담백한 보검">
+                                        <span>
+                                            <span>담백한 보검 샐러디</span>
+                                            <span>686 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">포케볼</a>
+                        <div class="menu_bg">
+                            <ul class="menu_item">
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/poke_001.png" alt="로스트 삼겹">
+                                        <span>
+                                            <span>로스트 삼겹 포케볼</span>
+                                            <span>605 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/poke_002.png" alt="그라브락스 연어">
+                                        <span>
+                                            <span>그라브락스 연어 포케볼</span>
+                                            <span>462 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/poke_003.png" alt="칠리베이컨">
+                                        <span>
+                                            <span>칠리베이컨 포케볼</span>
+                                            <span>507 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/poke_004.png" alt="우삼겹">
+                                        <span>
+                                            <span>우삼겹 포케볼</span>
+                                            <span>630 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">누들볼</a>
+                        <div class="menu_bg">
+                            <ul class="menu_item">
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/noodle_001.png" alt="우삼겹메밀면">
+                                        <span>
+                                            <span>우삼겹메밀면 누들볼</span>
+                                            <span>413 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/noodle_002.png" alt="그라브락스">
+                                        <span>
+                                            <span>그라브락스 연어 파스타 누들볼</span>
+                                            <span>336 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/noodle_003.png" alt="갈빗살메밀면">
+                                        <span>
+                                            <span>갈빗살메밀면 누들볼</span>
+                                            <span>432 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">프로틴박스</a>
+                        <div class="menu_bg">
+                            <ul class="menu_item">
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_001.png" alt="더블 닭다리살 박스">
+                                        <span>
+                                            <span>더블 닭다리살 박스</span>
+                                            <span>657 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_002.png" alt="더블치킨파스타">
+                                        <span>
+                                            <span>더블 치킨 파스타 박스</span>
+                                            <span>557 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_003.png" alt="">
+                                        <span>
+                                            <span>더블 비프 박스</span>
+                                            <span>763 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="info">
+                                        <img src="./images/salady_menu/salady_004.png" alt="">
+                                        <span>
+                                            <span>더블 삼겹 박스</span>
+                                            <span>846 Kcal</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!-- main 4 샐러디 스토리 & 샐러디 친환경 캠페인 -->
         <section id="subbnr1">
             <div class="story_left">
@@ -146,7 +348,7 @@
         <!-- 매장찾기 -->
         <section id="map">
             <div class="map_wrap">
-                <h3 class="map_title"></h3>
+                <h3 class="map_title">매장찾기</h3>
                 <p>가까운 샐러디 매장을 찾아보세요.</p>
                 <a href="#">위치 확인하기</a>
             </div>

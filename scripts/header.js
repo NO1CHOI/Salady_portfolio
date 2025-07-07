@@ -1,3 +1,5 @@
+/* header */
+
 const headerGnb = document.querySelectorAll('.gnb > li')
 const lnbBg = document.querySelectorAll('.lnb_bg')
 
@@ -17,25 +19,15 @@ for(let i=0;i<5;i++){
     })
 };
 
-
-//트랜스레이y 트렌지션
-// //애니메이션
-// mNavWrap.style.transition = 'height 0.3s linear'
-
-// mNavBtn.addEventListener('click',()=>{
-//     mNavWrap.style.display ='block'
-//     mNavWrap.style.height = '500px'
-// })
-
-// // X 클릭 시 m_nav_wrap 숨기기
-// closeBtn.addEventListener('click',()=>{
-//     mNavWrap.style.display ='none'
-//     mNavWrap.style.height = '0'
-// })
-
-// headerGnb.addEventListener('mouseover',()=>{
-//     lnbBg[i].style.display ='block'
-// })
-// headerGnb.addEventListener('mouseout',()=>{
-//     lnbBg[i].style.display ='none'
-// })
+/* 메인배너 스와이퍼 */
+var swiper = new Swiper(".swiper", {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    autoplay:{delay:5000},
+    loop:true,
+    direction:'horizontal', //horizontal, vertical
+    });

@@ -12,11 +12,93 @@ color:#17633D,#EE7725,#333333
 
 /* 메인배너 ------------- */
 main #bnr {}
-main #bnr h2 {width: 1920px; height: 600px; margin:0 auto;}
-main #bnr h2 a {}
-main #bnr h2 a img {width: 100%;}
+main #bnr .swiper {width: 1920px; height: 600px; margin:0 auto;}
+main #bnr .swiper .swiper-wrapper {
+    background-size:cover ;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+main #bnr .swiper .swiper-wrapper .swiper-slide {}
+main #bnr .swiper .swiper-wrapper .slide1 {background-image:url(../images/bnr_1.png);}
+main #bnr .swiper .swiper-wrapper .slide2 {background-image:url(../images/bnr_2.png);}
+main #bnr .swiper .swiper-wrapper .slide3 {background-image:url(../images/bnr_3.png);}
+main #bnr .swiper .swiper-wrapper .slide4 {background-image:url(../images/bnr_4.png);}
+
 /* main 2 추천메뉴 ------------- */
+main #main_1 {
+    width: 1920px;
+    margin: 0 auto;
+    background-color: wheat;
+    display: flex;
+
+}
+main #main_1 .main_title {}
+main #main_1 .main_title h2 {font-size:2.5rem; font-weight: 600;color: #222;line-height: 1.2;}
+main #main_1 .main_title p {font-size:0.875rem; line-height: 1.5;margin:40px 0 140px 0;}
+main #main_1 .main_title a {font-size:0.875rem; color:#fff;background-color: #17633D; padding:15px 30px; border-radius:5px;}
+main #main_1 .mySwiper {background-color: yellow;}
+main #main_1 .mySwiper .swiper-wrapper {}
+main #main_1 .mySwiper .swiper-wrapper .swiper-slide {}
+main #main_1 .mySwiper .swiper-wrapper .menu_swiper1 {}
+main #main_1 .mySwiper .swiper-wrapper .menu_swiper2 {}
+main #main_1 .mySwiper .swiper-wrapper .menu_swiper3 {}
+main #main_1 .mySwiper .swiper-wrapper .menu_swiper4 {}
+main #main_1 .mySwiper .swiper-wrapper .menu_swiper5 {}
+main #main_1 .mySwiper .menu_right_btn {}
+main #main_1 .mySwiper .menu_left_btn {}
+/* 추천 메뉴 큰 썸네일  */
+main #main_1 .mySwiper .bigThum {}
 /* main 3 샐러디메뉴 ------------- */
+main #main_2 {
+    /* background-color: wheat; */
+    width: 1920px;
+    margin: 0 auto;
+    height: 688px;
+    display: flex;
+    padding:137px 300px;
+    justify-content: space-between;
+}
+main #main_2 h2 {font-size: 2.5rem; font-weight:600;}
+main #main_2 .menu_wrap {}
+main #main_2 .menu_wrap .menu_container {
+    display:flex;
+    gap:40px;
+    position: relative;
+    margin-top:20px;
+}
+main #main_2 .menu_wrap .menu_container > li {}
+main #main_2 .menu_wrap .menu_container li a {font-size: 1.25rem; color:#AFAFAF;}
+main #main_2 .menu_wrap .menu_container li .active {color:#17633D;font-weight: 600;}
+main #main_2 .menu_wrap .menu_container li .menu_bg {
+    width: 1320px;
+    position:absolute; top:100px; right:0;
+    display: none;
+}
+main #main_2 .menu_wrap .menu_container li:first-child .show {display: block;}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item {
+    display:flex; gap:53px;
+}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li {}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info {
+    width: 300px; height: 300px; display: inline-block;
+    position:relative;
+}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info img {width: 100%;}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info > span {
+    position:absolute; top:0; right:0;
+    width:300px; height: 300px;
+    text-align: center;
+    background: #17633D;
+    border-radius: 50%;
+    padding:120px 0 0 0;
+    opacity: 0;
+}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info:hover span {opacity:1;}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info > span span{
+    display:block;
+    color:#fff;
+    margin:10px 0;
+}
 /* main 4 샐러디 스토리 & 샐러디 친환경 캠페인 ------------- */
 main #subbnr1 {
     width: 1920px;
@@ -61,7 +143,7 @@ main #txt {
 }
 main #txt .txt_bg_ani {
     width:100%; height:56px;
-    background:url(/images/band.png) repeat-x;
+    background:url(../images/band.png) repeat-x;
     animation: txt_ani 20s linear infinite;
 }
 
@@ -90,7 +172,7 @@ main #brand .brand_story_wrap .brand_left a {
 main #brand .brand_story_wrap .brand_left a:hover {filter: brightness(1.2);}
 main #brand .brand_story_wrap .brand_right {
     width: 660px; height: 500px;
-    background:url(/images/brand_story.png) no-repeat center / cover;
+    background:url(../images/brand_story.png) no-repeat center / cover;
 }
 main #brand .franchise_wrap {
     display: flex;
@@ -98,7 +180,7 @@ main #brand .franchise_wrap {
 }
 main #brand .franchise_wrap .franchise_left {
     width: 660px; height: 500px;
-    background:url(/images/Franchise_story.png) no-repeat center / cover;
+    background:url(../images/Franchise_story.png) no-repeat center / cover;
 }
 main #brand .franchise_wrap .franchise_right {
     margin:100px 0 0 300px;
@@ -116,24 +198,73 @@ main #brand .franchise_wrap .franchise_right a {
 }
 main #brand .franchise_wrap .franchise_right a:hover {filter: brightness(1.2);}
 /* 매장찾기 ------------- */
-main #map {}
-main #map .map_wrap {}
-main #map .map_wrap .map_title {}
-main #map .map_wrap p {}
-main #map .map_wrap a {}
+main #map {
+    width: 100%; margin: 0 auto;
+    height: 438px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/mapn.png);
+}
+main #map .map_wrap {text-align: center;}
+main #map .map_wrap .map_title {font-size:3.125rem; color:#fff; font-weight: 600;}
+main #map .map_wrap p {font-size: 1.25rem; color:#fff;margin:50px 0;}
+main #map .map_wrap a {
+    background-color: #fff;
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 50px;
+}
 /* 인스타그램 ------------- */
-main #insta {}
-main #insta .insta_top {}
-main #insta .insta_top h2 {}
-main #insta .insta_top a {}
-main #insta .insta_top a img {}
-main #insta .insta_btm {}
-main #insta .insta_btm a {}
+main #insta {
+    width: 1320px;
+    margin: 100px auto;
+    /* background-color: wheat; */
+}
+main #insta .insta_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+main #insta .insta_top h2 {font-size: 2.5rem;}
+main #insta .insta_top a {
+    font-size: 1.125rem;
+    width:100px; height: 15px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content:space-between;
+}
+main #insta .insta_top a img {height:100%;}
+main #insta .insta_btm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+main #insta .insta_btm a {
+    width: 300px; height: 300px;
+    margin-top:50px; overflow: hidden;
+    border-radius: 15px;
+}
+main #insta .insta_btm a:hover img {animation:insta_ani 0.3s linear  both;}
+
+@keyframes insta_ani {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.1);}
+}
 /* 하단 서브배너 ------------- */
-main #subbnr2 {}
+main #subbnr2 {
+    /* background-color: wheat; */
+    width: 1320px;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 main #subbnr2 .app_left {}
-main #subbnr2 .app_left a {}
+main #subbnr2 .app_left a {width:650px; height: 350px; display: inline-block;}
 main #subbnr2 .app_left a img {}
 main #subbnr2 .ask_right {}
-main #subbnr2 .ask_right a {}
+main #subbnr2 .ask_right a {width:650px; height: 350px; display: inline-block;}
 main #subbnr2 .ask_right a img {}
