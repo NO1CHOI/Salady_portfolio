@@ -20,14 +20,30 @@ for(let i=0;i<5;i++){
 };
 
 /* 메인배너 스와이퍼 */
-var swiper = new Swiper(".swiper", {
+var mainswiper = new Swiper("#bnr .main-swiper", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
     pagination: {
-        el: ".swiper-pagination",
+        el: ".main-swiper .main-pagination", 
+        clickable: true,
     },
-    autoplay:{delay:5000},
-    loop:true,
-    direction:'horizontal', //horizontal, vertical
-    });
+    autoplay: { delay: 5000 },
+    loop: true,
+    direction: 'horizontal',
+});
+
+/* 추천메뉴 스와이퍼 */
+var menuswiper = new Swiper(".menuSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+        nextEl: ".main1_wrap .swiper-button-next",
+        prevEl: ".main1_wrap .swiper-button-prev",
+    },
+    autoplay: { delay: 3000 },
+    loop: true,
+    direction: 'horizontal',
+});

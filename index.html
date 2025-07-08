@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--플러그인 필수 JS cdn 연결-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 스크립트 -->
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/main.js" defer></script>
@@ -83,7 +84,7 @@
         <!-- 메인배너 -->
         <section id="bnr">
             <!-- 스와이퍼 사용 -->
-            <div class="swiper">
+            <div class="main-swiper swiper">
                 <!--필수-->
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1"></div>
@@ -92,28 +93,33 @@
                     <div class="swiper-slide slide4"></div>
                 </div>
                 <!--필요 시 사용(선택)-->
-                <div class="swiper-pagination"></div>
+                <div class="main-pagination swiper-pagination"></div>
         </div>
         </section>
         <!-- main 2 추천메뉴 -->
         <section id="main_1">
-            <div class="main_title">
-                <h2>여름엔 가볍게,<br>샐러디답게!</h2>
-                <p>무더운 여름, 기름지고 무거운 음식은 부담스럽기만 하죠.<br>샐러디는 신선한 채소와 고단백 토핑으로 만든 균형 잡힌 한 끼로,<br>더위에 지친 당신의 하루를 건강하게 채워줍니다.</p>
-                <a href="#">메뉴 더보기</a>
-            </div>
-            <!--추천메뉴 Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide menu_swiper1 bigThum">Slide 1</div>
-                    <div class="swiper-slide menu_swiper2">Slide 2</div>
-                    <div class="swiper-slide menu_swiper3">Slide 3</div>
-                    <div class="swiper-slide menu_swiper4">Slide 4</div>
-                    <div class="swiper-slide menu_swiper5">Slide 5</div>
+            <div class="main1_wrap">
+                <div class="main_title">
+                    <h2>여름엔 가볍게,<br>샐러디답게!</h2>
+                    <p>무더운 여름, 기름지고 무거운 음식은 부담스럽기만 하죠.<br>샐러디는 신선한 채소와 고단백 토핑으로 만든 균형 잡힌 한 끼로,<br>더위에 지친 당신의 하루를 건강하게 채워줍니다.</p>
+                    <a href="#">메뉴 더보기</a>
                 </div>
-                <div class="swiper-button-next menu_right_btn"></div>
-                <div class="swiper-button-prev menu_left_btn"></div>
+                <div class="swiper menuSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1"><p>우삼겹 포케볼</p></div>
+                        <div class="swiper-slide slide2"><p>우삼겹메밀면 누들볼</p></div>
+                        <div class="swiper-slide slide3"><p>로스트삼겹 포케볼</p></div>
+                        <div class="swiper-slide slide4"><p>콥 샐러디</p></div>
+                        <div class="swiper-slide slide5"><p>탄단지 샐러디</p></div>
+                        <div class="swiper-slide slide6"><p>그라브락스 연어 파스타 누들볼</p></div>
+                        <div class="swiper-slide slide7"><p>그라브락스 연어 샐러디</p></div>
+                        <div class="swiper-slide slide8"><p>단백한 보검 샐러디</p></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"><img src="./images/icon/right-arrow.png" alt=""></div>
+                <div class="swiper-button-prev"><img src="./images/icon/right-arrow.png" alt=""></div>
             </div>
+                <!--추천메뉴 Swiper -->
         </section>
         <!-- main 3 샐러디메뉴 -->
         <section id="main_2">

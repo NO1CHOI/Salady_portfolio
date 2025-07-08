@@ -3,7 +3,6 @@ const menuName = document.querySelectorAll('.menu_bg')
 console.log(salady, menuName)
 
 /* a링크 막기*/
-e.preventDefault();
 
 
 /* .active 이동하기 */
