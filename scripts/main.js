@@ -38,3 +38,27 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
     },
 });
+
+
+/* 추천메뉴 p 마우스 호버 효과 */
+const menuP = document.querySelectorAll('.swiper-slide p')
+const swiperBorder = document.querySelectorAll('.main1_wrap .swiper-slide')
+console.log(menuP,swiperBorder)
+
+for(let i=0;i<menuP.length;i++){
+    menuP[i].addEventListener('mouseover',()=>{
+        menuP[i].style.color = '#17633D'
+    })
+    menuP[i].addEventListener('mouseout',()=>{
+        menuP[i].style.color = '#222'
+    })
+}
+
+// for(let i=0;i<swiperBorder.length;i++){
+//     menuP[i].addEventListener('mouseover',()=>{
+//         swiperBorder[i].style.borderStyle  = '#17633D'
+//     })
+//     menuP[i].addEventListener('mouseout',()=>{
+//         swiperBorder[i].style.borderStyle  = '#222'
+//     })
+// }

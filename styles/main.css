@@ -56,6 +56,9 @@ main #main_1 .main1_wrap .menuSwiper .swiper-wrapper .swiper-slide {
     background-position: center;
     background-size: contain;
 }
+main #main_1 .main1_wrap .menuSwiper .swiper-wrapper .swiper-slide:hover {
+    border: 1px solid #61ca95;
+}
 main #main_1 .main1_wrap .menuSwiper .swiper-wrapper .swiper-slide p {
     text-align: center;
     line-height: 730px;
@@ -105,8 +108,15 @@ main #main_2 .menu_wrap .menu_container {
     margin-top:20px;
 }
 main #main_2 .menu_wrap .menu_container > li {}
-main #main_2 .menu_wrap .menu_container li a {font-size: 1.25rem; color:#AFAFAF;}
-main #main_2 .menu_wrap .menu_container li .active {color:#17633D;font-weight: 600;}
+main #main_2 .menu_wrap .menu_container li a {
+    font-size: 1.25rem; 
+    color:#AFAFAF;
+    transition:all 0.5s;
+}
+main #main_2 .menu_wrap .menu_container li .active {
+    color:#17633D;
+    font-weight: 600;
+}
 main #main_2 .menu_wrap .menu_container li .menu_bg {
     width: 1320px;
     position:absolute; top:100px; right:0;
@@ -127,11 +137,11 @@ main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info > span {
     width:300px; height: 300px;
     text-align: center;
     background: #17633D;
-    border-radius: 50%;
     padding:120px 0 0 0;
     opacity: 0;
+    transition:all 0.5s;
 }
-main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info:hover span {opacity:1;}
+main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info:hover span {opacity:1;border-radius: 50%;}
 main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info > span span{
     display:block;
     color:#fff;
