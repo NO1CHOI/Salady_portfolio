@@ -12,7 +12,7 @@ for(let i=0;i<5;i++){
 
 for(let i=0;i<5;i++){
     headerGnb[i].addEventListener('mouseover',()=>{
-    lnbBg[i].style.height = '50px'
+    lnbBg[i].style.height = '49px'
     })
     headerGnb[i].addEventListener('mouseout',()=>{
     lnbBg[i].style.height = '0'
