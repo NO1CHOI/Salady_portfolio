@@ -2,7 +2,14 @@ const salady = document.querySelectorAll('.menu_container > li > a')
 const menuName = document.querySelectorAll('.menu_bg')
 console.log(salady, menuName)
 
-/* a링크 막기*/
+// a링크 이동 막기
+document.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+    if (this.getAttribute('href') === '#' || this.getAttribute('href') === '') {
+        e.preventDefault();
+    }
+    });
+});
 
 
 /* .active 이동하기 */
