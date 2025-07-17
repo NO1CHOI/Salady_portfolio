@@ -35,7 +35,7 @@ main #main_1 .main1_wrap {
     width: 1320px;
     margin:0 auto;
     display: flex;
-    padding-top:280px;
+    padding-top:180px;
     position:relative;
 }
 main #main_1 .main1_wrap .main_title {}
@@ -73,7 +73,7 @@ main #main_1 .main1_wrap .menuSwiper .swiper-wrapper .slide6 {background-image: 
 main #main_1 .main1_wrap .menuSwiper .swiper-wrapper .slide7 {background-image: url(../images/menu_007.jpg);}
 main #main_1 .main1_wrap .menuSwiper .swiper-wrapper .slide8 {background-image: url(../images/menu_008.jpg);}
 main #main_1 .main1_wrap .swiper-button-next {
-    top:530px;left:50px;
+    top:430px;left:50px;
     width:30px;height: 30px;
     display: block;
     /* background-color: violet; */
@@ -81,7 +81,7 @@ main #main_1 .main1_wrap .swiper-button-next {
 main #main_1 .main1_wrap .swiper-button-next img {width: 100%; opacity: 0.5;}
 main #main_1 .main1_wrap .swiper-button-next::after {display: none;}
 main #main_1 .main1_wrap .swiper-button-prev {
-    top:530px;left:0;
+    top:430px;left:0;
     display: block;
     width:30px;height: 30px;
     /* background-color: aqua; */
