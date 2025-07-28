@@ -6,8 +6,8 @@ console.log(salady, menuName)
 document.querySelectorAll('a').forEach(function(link) {
     link.addEventListener('click', function(e) {
     if (this.getAttribute('href') === '#' || this.getAttribute('href') === '') {
-        e.preventDefault();
-    }
+            e.preventDefault();
+        }
     });
 });
 
