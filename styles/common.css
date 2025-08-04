@@ -40,7 +40,7 @@ header nav .gnb li > .title {
 header nav .gnb li .lnb_bg {
     width: 100%;
     background-color: #17633D;
-    position:absolute; top:100px; right:0;
+    position:absolute; top:100%; right:0;
     overflow: hidden;
 }
 header nav .gnb li .lnb_bg * {}

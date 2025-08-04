@@ -12,6 +12,7 @@ color:#17633D,#EE7725,#333333
 
 body {
     min-width: 1920px;
+    overflow-x: hidden;
 }
 /* 메인배너 ------------- */
 main #bnr {}
