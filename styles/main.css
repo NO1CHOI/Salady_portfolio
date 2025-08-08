@@ -266,6 +266,13 @@ main #map .map_wrap a {
     display: inline-block;
     padding: 15px 50px;
     border-radius: 50px;
+    border: 1px solid transparent;
+}
+main #map .map_wrap a:hover {
+    background-color: #17633D;
+    border: 1px solid #fff;
+    color:#fff;
+    transition: all 0.5s;
 }
 /* 인스타그램 ------------- */
 main #insta {
