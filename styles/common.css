@@ -9,7 +9,7 @@ main-color:#17633D,#EE7725,
 header {
     /* background-color:lightgoldenrodyellow; */
     /* box-shadow: 2px 3px 4px 5px red; */
-    width: 1920px;
+    width: 100%;
     margin:0 auto;
     display: flex;
     padding:0 300px;
@@ -71,7 +71,7 @@ header .import img {vertical-align: middle;}
 footer {
     background-color: #222222;
     width: 100%;
-    min-width: 1120px;
+    /* min-width: 1120px; */
     height:355px;
     display: flex;
     justify-content: space-around;

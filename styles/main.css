@@ -11,18 +11,18 @@ color:#17633D,#EE7725,#333333
 
 
 body {
-    min-width: 1920px;
+    /* min-width: 1920px; */ /* 반응형을 위해 삭제 */
     overflow-x: hidden;
 }
 /* 메인배너 ------------- */
 main #bnr {}
-main #bnr .swiper {width: 1920px; height: 600px; margin:0 auto; position: relative;}
-main #bnr .swiper .swiper-wrapper {
+main #bnr .swiper {width: 100%; height: 600px; margin:0 auto; position: relative;}
+main #bnr .swiper .swiper-wrapper {}
+main #bnr .swiper .swiper-wrapper .swiper-slide {    
     background-size:cover ;
     background-position:center;
     background-repeat:no-repeat;
 }
-main #bnr .swiper .swiper-wrapper .swiper-slide {}
 main #bnr .swiper .swiper-wrapper .slide1 {background-image:url(../images/bnr_1.png);}
 main #bnr .swiper .swiper-wrapper .slide2 {background-image:url(../images/bnr_2.png);}
 main #bnr .swiper .swiper-wrapper .slide3 {background-image:url(../images/bnr_3.png);}
@@ -30,7 +30,7 @@ main #bnr .swiper .swiper-wrapper .slide4 {background-image:url(../images/bnr_4.
 
 /* main 2 추천메뉴 ------------- */
 main #main_1 {
-    width: 1920px;
+    width: 100%;
     height: 800px;
     margin: 0 auto;
     /* background-color: wheat; */
@@ -96,7 +96,7 @@ main #main_1 .main1_wrap .swiper-button-prev::after {display: none;}
 /* main 3 샐러디메뉴 ------------- */
 main #main_2 {
     /* background-color: wheat; */
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
     height: 688px;
     display: flex;
@@ -153,7 +153,7 @@ main #main_2 .menu_wrap .menu_container li .menu_bg .menu_item li .info > span s
 }
 /* main 4 샐러디 스토리 & 샐러디 친환경 캠페인 ------------- */
 main #subbnr1 {
-    width: 1920px;
+    width: 100%;
     display:flex;
     margin: 0 auto;
 }
@@ -165,7 +165,7 @@ main #subbnr1 .story_right a {}
 main #subbnr1 .story_right a img {}
 /* mian 5 샐러디 뉴스 ------------- */
 main #news {
-    width: 1920px; 
+    width: 100%; 
     height: 854px;
     margin: 0 auto;
     display: flex;
